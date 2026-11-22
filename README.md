@@ -1,12 +1,29 @@
-# TouchInk Studio
+<div align="center">
 
-**Turn your Windows Precision Touchpad into a digital writing pad.**
+# ✒️ TouchInk Studio
 
-TouchInk Studio is an open-source handwriting and note-taking app for Windows. It reads **absolute touch coordinates** from a compatible touchpad, so writing follows the position of your finger or capacitive pen tip instead of ordinary mouse movement.
+### Your touchpad. Your canvas. ✨
 
-Built for anyone who wants to take handwritten notes but doesn't have a drawing tablet, tablet computer, or dedicated digital pen. Inspired by the handwriting workflow of apps such as Scribble Ink, using the hardware already built into a laptop.
+**Turn a Windows Precision Touchpad into a digital handwriting pad — no drawing tablet required.**
 
-> **No drawing tablet required.** A compatible Windows touchpad and a capacitive tip are enough to get started.
+[![Windows 11](https://img.shields.io/badge/Windows-11-0078D4?style=for-the-badge&logo=windows11&logoColor=white)](https://github.com/Phoenixphan207/TouchInk-Studio)
+![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![RAW HID](https://img.shields.io/badge/Precision_Touchpad-RAW_HID-7952B3?style=for-the-badge)
+![Local First](https://img.shields.io/badge/Privacy-Local_First-16A34A?style=for-the-badge)
+
+<img src="assets/touchpad-to-tablet.png" alt="Finger and touchpad approximately equivalent to a tablet and pen for handwriting" width="100%" />
+
+**🖊️ Write naturally · 🎨 Create freely · 📓 Keep every note**
+
+[**Features**](#features) · [**Requirements**](#requirements) · [**Installation**](#installation) · [**Getting Started**](#getting-started)
+
+</div>
+
+TouchInk Studio is an open-source Windows note-taking app that maps **absolute touchpad coordinates** directly to digital ink. Write with your finger or a compatible capacitive tip, without relying on ordinary mouse movement.
+
+> 💡 **The idea:** Why buy a drawing tablet if you can make use of the touchpad already on your laptop?
+
+---
 
 ## Features
 
@@ -23,8 +40,6 @@ Built for anyone who wants to take handwritten notes but doesn't have a drawing 
 - **Export** — save a page as PNG or SVG, with Undo/Redo support while editing.
 
 ## Requirements
-
-![Finger + touchpad to tablet-like writing](assets/pic.png)
 
 All you need to get started is:
 
@@ -69,6 +84,8 @@ Alternatively, download the project from [GitHub](https://github.com/Phoenixphan
 
 | Shortcut | Action |
 | --- | --- |
+| `Ctrl + L` | Toggle Writing Lock |
+| `F8` | Emergency unlock |
 | `1` / `2` / `3` / `4` | Pen / Fountain / Highlighter / Eraser |
 | `9` | Lasso selection |
 | `Delete` | Delete selected objects |
@@ -119,6 +136,7 @@ Notebooks are typically stored in:
 
 - Requires a compatible Precision Touchpad and HID reports; some devices may not work.
 - Standard capacitive tips do not provide active-stylus pressure sensitivity or palm rejection. Tip size and friction affect accuracy.
+- Writing Lock relies on Windows input hooks. Test **F8** before relying on it for long sessions; some system-level interactions may not be blocked.
 - Lasso selects whole ink objects, while the eraser can cut individual ink strokes. Erasing shapes or text removes the entire object.
 - Performance and compatibility can vary across devices. Hardware-specific behavior has not been validated on every laptop.
 
